@@ -34,49 +34,50 @@ const TabSection = () => {
     {
       eventKey: "multi",
       title: "Multi-App Kiosk",
-      heading: "Flexible Multi-App Kiosk solutions for versatile usage",
+      heading: "Elevate efficiency with Multi-App Kiosk",
       image: multiApp,
       features: [
-        "Run multiple applications on a single kiosk device securely.",
-        "Switch between apps with predefined user permissions.",
-        "Customize user access based on security policies.",
-        "Enhanced device control for IT administrators.",
+        "Limit device access to approved apps, ensuring focus and productivity.",
+        "With default phone and settings app inclusion, reduce distractions by providing users access to essential functions only.",
+        "With Hexnode's peripheral settings admins can allow necessary device settings while retaining control.",
+        "Simplify device management while empowering user productivity by deploying Multi-App Kiosk Mode.",
       ],
     },
     {
       eventKey: "web",
       title: "Web-based Kiosk",
-      heading: "Secure Web-based Kiosk for browser-based applications",
+      heading: "Explore the new way to manage web apps and websites",
       image: singleApp,
       features: [
-        "Lock devices to a single website or a set of web applications.",
-        "Prevent unauthorized browsing with web filtering.",
-        "Ideal for self-service kiosks and digital check-ins.",
-        "Ensures a seamless and controlled user experience.",
+       "Let users access essential and approved web apps, website and files only.",
+        "Make the best use of website kiosk with Hexnode's advanced settings.",
+        "Tailor your experience to match your unique use case.",
+        "From configuring toolbar options to scheduling page refresh, remote debugging, and limiting incognito tabs, take full control of your website kiosk experience.",
       ],
     },
     {
       eventKey: "digital",
       title: "Digital Signages",
-      heading: "Engaging Digital Signage solutions for displays",
+      heading: "Capture attention with Digital Signage Kiosks",
       image: singleApp,
       features: [
-        "Turn devices into interactive digital signage displays.",
-        "Schedule and automate content playback.",
-        "Supports images, videos, and web content.",
-        "Remote management and content updates.",
+        "Transform your devices into captivating digital signage kiosks that grab attention.",
+        "Engage your audience with vibrant images and seamless video streaming.",
+        "Customize media files with trimming, muting, and background music.",
+        "Advertise and show off your brand aesthetics to attract customers in different ways.",
+         "Take control with Hexnode to reestablish your brand's presence.",
       ],
     },
     {
       eventKey: "asam",
       title: "ASAM Kiosk",
-      heading: "ASAM Kiosk - Advanced Security & Access Management",
+      heading: "Unlock the power of Autonomous Single App Mode (ASAM)",
       image: singleApp,
       features: [
-        "Secure access management for restricted environments.",
-        "Supports biometric and RFID authentication.",
-        "Monitor and log kiosk activities in real-time.",
-        "Ideal for corporate and government institutions.",
+        "A feature that empowers your iOS app to seamlessly secure itself in the foreground.",
+        "Transform tablets or devices into dedicated point-of-sale (POS) systems by preventing interruptions from other applications or notifications.",
+        "Create focused, efficient and secure digital environments to match your requirements.",
+        "Configure ASAM effortlessly and elevate your user experience like never before.",
       ],
     },
   ];
@@ -103,18 +104,18 @@ const TabSection = () => {
                         exit={{ opacity: 0, x: 50 }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
                       >  
-
+  <div className="tabContentImg">
+                            <img src={tab.image} alt={tab.title} className="img-fluid" />
+                            </div>
                       <div className="tabContentTitle">
                                                   <h2>{tab.heading}</h2>
                                                   </div>
-                        <ul>
+                        <ul className="tabContentList">
                           {tab.features.map((feature, idx) => (
                             <li key={idx}>{feature}</li>
                           ))}
                         </ul>
-                        <div className="tabContentImg">
-                            <img src={tab.image} alt={tab.title} className="img-fluid" />
-                            </div>
+                      
                       </motion.div>
                     </Accordion.Body>
                   </Accordion.Item>

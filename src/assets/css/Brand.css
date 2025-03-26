@@ -8,6 +8,7 @@
     text-align: center;
     margin-bottom: 20px;
     width: 52%;
+    font-weight: bold;
 }
 .brandSideCard{
     border: none !important;
@@ -16,8 +17,10 @@
 .brandSideCard .card-header{
     background-color: white;
     border: none;
-    border-bottom: 1px solid #f8f8f8;
     font-size: 25px;
+}
+.card-body{
+    padding-top: 0px;
 }
 .brand-image img{
     border-radius: 20px;
@@ -29,9 +32,34 @@ display: flex;
 }
 .brandSideContent p{
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .tryFor{
     color: red;
     font-weight: 600;
+}
+.tooltip-box {
+    position: absolute;
+    top: 25%;
+    right: -5%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    background-color: #ebf0f6;
+    z-index: 1000;
+}
+
+.tooltip-box p::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    position: relative;
+    left: 0;
+    color: #6cc865;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #def8de;
+    padding: 5px 6px;
+    border-radius: 40px;
+    margin-right: 7px;
 }

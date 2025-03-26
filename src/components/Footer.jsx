@@ -12,7 +12,7 @@ const Footer = () => {
                 </div>
                 <div className='footerSign'>
                 <div className="row">
-                                <div className="col-md-6 pe-0">
+                                <div className="col-md-6 pe-xl-0">
                                        <div className='footerForm'>
                                 <Form.Control
                                             required
@@ -22,7 +22,7 @@ const Footer = () => {
                                         />
                             </div>
                                 </div>
-                                <div className="col-md-6 ps-1">
+                                <div className="col-md-6 ps-xl-1">
                                       <div className='footerBtn'>
                                         <button>
                                         GET STARTED NOW!                                       

@@ -11,6 +11,7 @@
 .navbar {
     background: transparent;
     transition: background 0.3s ease-in-out;
+    padding: 25px 0px;
 }
 
 .scrolled-navbar {
@@ -45,6 +46,7 @@
 .trialBtn2 button {
     font-size: 18px;
     padding: 13px 17px;
+    margin-bottom: 20px;
 }
 .bannerBelowContent p {
     color: #fff;
@@ -84,3 +86,7 @@ button:focus:not(:focus-visible) {
     outline: 0;
     border: none;
 }
+
+
+
+

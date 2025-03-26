@@ -1,0 +1,237 @@
+/***** Responsive CSS START *****/
+@media only screen and (min-width: 1920px) {}
+
+@media only screen and (width: 1920px) {}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {}
+
+@media only screen and (min-width: 1025px) and (max-width: 1300px) {}
+
+@media only screen and (device-width: 1024px) {
+    .total {
+        margin-bottom: 14px;
+    }
+
+    .borderBottomCanidate {
+        border: 1px solid #ddd;
+        height: 229px;
+        padding: 8px 23px;
+    }
+
+    .candidateImg img {
+        width: 70%;
+    }
+
+    .customStateImg2 {
+        width: 52%;
+        margin: 10px 0px 0px;
+    }
+
+    .customStateImg1 {
+        width: 40%;
+        margin: 0px 0px 10px;
+    }
+
+    .assembly {
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (min-width: 993px) and (max-width: 1350px) {}
+
+@media only screen and (min-width: 993px) {}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (min-width: 812px) and (max-width: 992px) {}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {}
+
+@media screen and (min-width: 769px) and (max-width: 1188px) {}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {}
+
+@media only screen and (min-width: 667px) and (max-width: 768px) {}
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {}
+
+@media only screen and (max-width: 768px) {
+    .total {
+        margin-bottom: 12px;
+    }
+
+    .borderBottomCanidate {
+        height: 228px;
+    }
+
+    .customStateImg1 {
+        width: 62%;
+        margin: 0px 0px 2px;
+    }
+
+    .assembly {
+        height: 228px;
+    }
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 767px) {}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 750px) {}
+
+@media only screen and (min-width: 731px) and (max-width: 736px) {}
+
+@media only screen and (max-width: 700px) {}
+
+@media only screen and (device-width: 640px) {}
+
+@media only screen and (max-width: 640px) {}
+
+@media only screen and (min-width: 480px) and (max-width: 667px) {}
+
+@media only screen and (max-width: 667px) {}
+
+@media (min-width: 576px) {}
+
+@media only screen and (max-width: 575px) {}
+
+@media only screen and (min-width: 480px) {}
+
+@media only screen and (max-width: 480px) {
+    .mb_400 {
+        margin-bottom: 20px;
+    }
+
+    .borderBottomCanidate {
+        height: 283px;
+    }
+
+    .candidate-slide1 {
+        position: absolute;
+        top: 148px;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+
+    .customStateImg1 {
+        width: 62%;
+        margin: 0px 0px -3px;
+    }
+
+    .total {
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (min-width: 471px) and (max-width: 767px) {}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {}
+
+@media only screen and (max-width: 414px) {
+.bannerContent h3{
+    text-align: center;
+    font-size: 33px;
+}
+.trialBtn2 button {
+   width: 100%;
+   margin-bottom: 40px;
+}
+.tooltip-box {
+    right: 0%;
+}
+.tabSectionTitle h2 {
+    font-size: 25px;
+}
+.tabContentTitle h2 {
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.brand-title h3 {
+    width: 100%;
+}
+.brandSideCard .card-header {
+    font-size: 23px;
+}
+.choose-title h3 {
+    font-size: 33px;
+}
+.chooseImageContainer {
+    margin: 0 9% 10% 7%;
+    padding: 40px 0px;
+}
+
+.swiper-button-prev{
+    position: absolute;
+left: 30%;
+top: 95%;
+}
+        .swiper-button-next {
+            position: absolute;
+            left: 50%;
+            top: 95%;
+        }
+.sideContentBg {
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+.chooseImage img {
+    border-radius: 20px 20px 0px 0px ;
+}
+.chooseImageContent h4 {
+    font-size: 19px;
+    text-align: center;
+}
+.chooseImageContentInner {
+    text-align: left;
+    padding: 20px 29px;
+}
+.footerBtn button {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.footer-title h3{
+    font-size: 30px;
+}
+.footerSign {
+    width: 100%;
+    margin: 10px auto;
+}
+}
+
+@media only screen and (min-width: 411px) and (max-width: 414px) {}
+
+@media only screen and (min-width: 540px) and (max-width: 540px) {}
+
+@media only screen and (min-width: 393px) and (max-width: 393px) {}
+
+@media only screen and (min-width: 376px) and (max-width: 480px) {}
+
+@media screen and (min-width: 376px) and (max-width: 470px) {}
+
+@media only screen and (min-width: 375px) and (max-width: 400px) {}
+
+@media only screen and (min-width: 375px) and (max-width: 390px) {}
+
+@media only screen and (max-width: 390px) {}
+
+@media only screen and (max-width: 375px) {}
+
+@media only screen and (max-width: 360px) {}
+
+@media only screen and (max-width: 320px) {}
+
+@media only screen and (max-width: 290px) {}
+
+/***** Responsive CSS END *****/
+/***** Responsive CSS END *****/
+/* Responsive Section */

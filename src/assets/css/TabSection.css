@@ -12,6 +12,7 @@
     color: white;
     background-color: black;
     border-color: var(--bs-nav-tabs-link-active-border-color);
+    transition: all 0.4s ease-in-out;
     
 }
 .tabSection .nav-link {
@@ -61,3 +62,4 @@ padding-left: 30px;
     background-color: transparent;
     color: black;
 }
+

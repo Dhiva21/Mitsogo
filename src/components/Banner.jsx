@@ -72,7 +72,7 @@ const Banner = () => {
           <Offcanvas.Header closeButton>
             <Offcanvas.Title></Offcanvas.Title>
           </Offcanvas.Header>
-          <hr />
+         
           <Offcanvas.Body>
             <Nav className="ms-auto">
               <div className="trialBtn">
@@ -95,7 +95,7 @@ const Banner = () => {
                         </div>
                         <div>
                             <div className="row">
-                                <div className="col-md-7 col-12 pe-0 mb-3">
+                                <div className="col-md-7 col-12 pe-xl-0 mb-3">
                                        <div className='trialForm'>
                                 <Form.Control
                                             required
@@ -105,7 +105,7 @@ const Banner = () => {
                                         />
                             </div>
                                 </div>
-                                <div className="col-md-5 col-12 ps-1">
+                                <div className="col-md-5 col-12 ps-xl-1">
                                       <div className='trialBtn trialBtn2'>
                                         <button>
                                         GET STARTED NOW!                                       
