@@ -1,0 +1,57 @@
+.tabSectionTitle h2{
+  font-size: 44px;
+    font-weight: bold;
+    padding: 30px 0px;
+    text-align: center;
+}
+.tabSection{
+    --bs-nav-tabs-border-color: none;
+}
+.tabSection .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: white;
+    background-color: black;
+    border-color: var(--bs-nav-tabs-link-active-border-color);
+    
+}
+.tabSection .nav-link {
+    color: #000;
+    font-size: 25px;
+    border: 0.5px solid #e5e7eb;
+    border-radius: 3px;
+    padding: 17px 24px;
+}
+.tab-content{
+    background-color: #f7f7f7;
+    padding: 30px 50px;
+}
+.tabContentTitle h2 {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 30px 0px;
+    text-align: left;
+    color: black;
+}
+.tabContentList {
+    position: relative;
+    list-style-type: none;
+padding-left: 30px;
+    margin-bottom: 10px;
+}
+.tabContentList li {
+    font-size: 18px;
+    color: black;
+        margin-bottom: 15px;
+}
+.tabContentList li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.tabContentImg img{
+    border-radius: 20px;
+}

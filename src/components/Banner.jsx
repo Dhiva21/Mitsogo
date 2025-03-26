@@ -96,7 +96,7 @@ const Banner = () => {
                         <div className="col-md-4">
                             <div className='rightBorder'>
                                <div className='bannerBelowContent'>
-                                <img src={idc} alt="Forrester" className='img-fluid' />
+                                <img src={idc} alt="IDC" className='img-fluid' />
                                 <p>
                                     Hexnode is listed as a leader and a major player in IDC MarketScape UEM Vendors Assessment Reports 2024.
                                 </p>
@@ -107,7 +107,7 @@ const Banner = () => {
                          <div className="col-md-4">
                             <div className='rightBorder'>
                                <div className='bannerBelowContent'>
-                                <img src={gartner} alt="Forrester" className='img-fluid' />
+                                <img src={gartner} alt="Gartner" className='img-fluid' />
                                 <p>
                                    Hexnode was recognized in the 2025 Gartner® Market Guide for Unified Endpoint Management Tools.
                                 </p>
