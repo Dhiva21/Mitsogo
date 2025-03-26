@@ -15,11 +15,12 @@
     
 }
 .tabSection .nav-link {
-    color: #000;
+    color: #020a1980;
     font-size: 25px;
     border: 0.5px solid #e5e7eb;
     border-radius: 3px;
     padding: 17px 24px;
+    width: 259px;
 }
 .tab-content{
     background-color: #f7f7f7;
@@ -44,14 +45,19 @@ padding-left: 30px;
         margin-bottom: 15px;
 }
 .tabContentList li::before {
-    content: "\2713";
+    content: "\f00c"; 
+    font-family: "Font Awesome 5 Free"; 
     position: absolute;
     left: 0;
-    color: green;
+    color: #6cc865;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 .tabContentImg img{
     border-radius: 20px;
+}
+.accordion-button:not(.collapsed){
+    background-color: transparent;
+    color: black;
 }

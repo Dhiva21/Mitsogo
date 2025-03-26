@@ -1,34 +1,34 @@
 import { useState } from "react";
 import { Card } from "react-bootstrap";
-import singleApp from "../assets/images/single-app-kios-image.png";
-import multiApp from "../assets/images/multi-app-kiosk-image.png";
+import imgOne from "../assets/images/brand-img-1.png";
+import imgTwo from "../assets/images/brand-img-1.png";
 import '../assets/css/Brand.css'
 
 const sections = [
   {
     title: "Customized interface for brand visibility",
     content: "Create a locked-down environment with customized interface. Maximize brand visibility and leave a lasting impression by showcasing products, services and key messages directly to users through the customized interface.",
-    image: singleApp,
+    image: imgOne,
   },
   {
     title: "Secure and update your app ecosystem",
     content: "Ensure your applications remain up-to-date...",
-    image: multiApp,
+    image: imgOne,
   },
   {
     title: "Provide an easy-to-use interface for end-users",
     content: "Simplify navigation and enhance user experience...",
-   image: multiApp,
+   image: imgOne,
     },
   {
     title: "Secure and update your app ecosystem",
     content: "Ensure your applications remain up-to-date...",
-    image: multiApp,
+    image: imgOne,
   },
   {
     title: "Provide an easy-to-use interface for end-users",
     content: "Simplify navigation and enhance user experience...",
-   image: multiApp,
+   image: imgOne,
   },
 ];
 
@@ -57,20 +57,37 @@ const Brand = () => {
               </div>
               <div className="col-md-7">
                           <div className="content-container">
-        {sections.map((section, index) => (
-          <Card
-            key={index}
-            className="mb-3 brandSideCard"
-            onClick={() => setSelectedIndex(index)}
-            style={{
-              cursor: "pointer",
-              border: selectedIndex === index ? "2px solid #000" : "1px solid #ddd",
-            }}
-          >
-            <Card.Header style={{ fontWeight: "bold" }}>{section.title}</Card.Header>
-            {selectedIndex === index && <Card.Body>{section.content}</Card.Body>}
-          </Card>
-        ))}
+                          {sections.map((section, index) => (
+  <Card
+    key={index}
+    className="mb-3 brandSideCard"
+    onClick={() => setSelectedIndex(index)}
+    style={{
+      cursor: "pointer",
+      border: selectedIndex === index ? "2px solid #000" : "1px solid #ddd",
+    }}
+  >
+    <Card.Header style={{ fontWeight: "bold" }}>{section.title}</Card.Header>
+    
+    {selectedIndex === index && (
+      <Card.Body>
+        <div className="brandSideContent">
+          <p>{section.content}</p>
+        
+        </div>
+       
+        <div className="creditCard">
+          <p className="text-start fw-normal">
+            <span className="tryFor">
+              TRY FOR FREE <span className="arrow">&gt;</span>
+            </span>
+          </p>
+        </div>
+      </Card.Body>
+    )}
+  </Card>
+))}
+
       </div>
                   </div>
                   </div>

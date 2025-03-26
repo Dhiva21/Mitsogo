@@ -1,0 +1,81 @@
+.choose-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.choose-title h3{
+    font-weight: bold;
+}
+.sliderChoose{
+    text-align: center;
+}
+.chooseImage{
+    display: flex;
+        justify-content: end;
+}
+.chooseImage img{
+    border-radius: 20px 0px 0px 20px;
+}
+.chooseImageContent{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+
+}
+.chooseImageContent h4{
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+.chooseBg{
+    background-color: #f7f7f7;
+    padding: 60px 0px;
+}
+.sideContentBg{
+    background-color: white;
+}
+.chooseImageContentInner{
+    text-align: left;
+    padding: 20px 49px;
+}
+.chooseImageContentInner p {
+    font-size: 25px;
+    font-weight: bold;
+}
+.swiper-button-prev,.swiper-button-next{
+    background: white;
+    padding: 26px 25px;
+    border-radius: 8px;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .fade-left,
+  .fade-right {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+  }
+  
+  .fade-left {
+    left: 0;
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 228, 0) 21%);
+  }
+  
+  .fade-right {
+    right: 0;
+    background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 21%);
+  }
+  

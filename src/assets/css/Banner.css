@@ -1,17 +1,32 @@
 .bannerBg{
   background-color: #000;
 }
-
-
-
-.logoWidth{
-    width: 20%;
+.navbar-toggler{
+    border: 0px;
 }
+.pt_40{
+    padding-top: 40px;
+}
+
+.navbar {
+    background: transparent;
+    transition: background 0.3s ease-in-out;
+}
+
+.scrolled-navbar {
+    background: #ffffff; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logoWidth {
+    height: 25px; 
+}
+
 .trialBtn button {
     background-color: #dd0735;
     color: #fff;
-    border: 1px solid #000;
-    padding: 13px 20px;
+    border: none;
+    padding: 13px 40px;
     font-size: 16px;
     font-weight: 600;
     border-radius: 5px;
@@ -24,32 +39,48 @@
     margin-bottom: 20px;
 }
 .trialForm input {
-    line-height: 2;
-    font-size: 27px;
+    line-height: 2.2;
+    font-size: 18px;
 }
 .trialBtn2 button {
-    line-height: 2.2;
-    font-size: 19px;
+    font-size: 18px;
+    padding: 13px 17px;
 }
-.bannerBelowContent p{
+.bannerBelowContent p {
     color: #fff;
     font-size: 14px;
+    width: 75%;
     margin-top: 20px;
 }
 .rightBorder{
-border-right: 3px solid hsla(0, 0%, 100%, .2);
+border-right: 1px solid hsla(0, 0%, 100%, .2);
+height: 100%;
+}
+.sideBorder{
+    border-right: 1px solid hsla(0, 0%, 100%, .2);
 height: 100%;
 }
 .bannerBelowBg{
     background-color: #1a1c2b;
-    padding: 40px 0;
+    padding: 20px 0 0px;
 }
 .bannerBelowContent img{
-    width: 45%;
+    width: 30%;
 }
 .bannerBelowContent{
     display: flex;
         flex-direction: column;
         justify-content: center;
-    padding: 0px 45px;
+        padding: 17px 0px 0px 0px;
+}
+.rightContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    padding: 20px 1px 0px 35px;
+}
+button:focus:not(:focus-visible) {
+    outline: 0;
+    border: none;
 }
