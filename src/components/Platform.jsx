@@ -1,14 +1,19 @@
 import React from "react";
 import android from "../assets/images/android.svg";
+import appleTv from "../assets/images/apple-tv.svg";
+import androidTv from "../assets/images/android-tv.svg";
+import windows from "../assets/images/windows.svg";
+import ios from "../assets/images/ios.svg";
+import fireTv from "../assets/images/amazon-fire.png";
 import "../assets/css/Platform.css";
 
 const platforms = [
   { name: "Android", logo: android },
-  { name: "Windows",  logo: android  },
-  { name: "iOS",  logo: android },
-  { name: "Android TV",  logo: android },
-  { name: "Apple TV",  logo: android  },
-  { name: "Fire TV",  logo: android  },
+  { name: "Windows",  logo: windows  },
+  { name: "iOS",  logo: ios },
+  { name: "Android TV",  logo: androidTv },
+  { name: "Apple TV",  logo: appleTv  },
+  { name: "Fire TV",  logo: fireTv  },
 ];
 
 const Platform = () => {
@@ -22,8 +27,8 @@ const Platform = () => {
 
               <div className="row justify-content-center">
                 {platforms.map((platform, index) => (
-                  <div key={index} className="col-md-2">
-                    <div className="platform-card">
+                  <div key={index} className="col-md-2 col-6">
+                    <div className="platform-card  mb-3">
                       <img src={platform.logo} alt={platform.name} />
                     </div>
                   </div>
