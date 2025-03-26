@@ -1,0 +1,53 @@
+.footerBg{
+    background-color: #000;
+    padding: 50px 0px;
+}
+
+
+.footer-title h3{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.footerBtn button {
+    background-color: #dd0735;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 13px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.footerForm input {
+    line-height: 2;
+    font-size: 19px;
+    margin-bottom: 20px
+}
+.footerSign{
+    width: 50%;
+    margin: 10px auto;
+}
+.creditCard p{
+    color: #556575;
+    text-align: center;
+}
+.creditCard p span{
+    color:red;
+}
+
+  .request {
+    transition: color 0.3s ease;
+  }
+  
+  .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease; 
+  }
+  
+  .request:hover .arrow {
+    transform: translateX(5px); 
+  }
+  

@@ -15,5 +15,6 @@ Front-end
 1.npm install framer-motion
 2.npm install react-owl-carousel owl.carousel
 3.npm install jquery
+4.npm install @fortawesome/fontawesome-free
 
 
