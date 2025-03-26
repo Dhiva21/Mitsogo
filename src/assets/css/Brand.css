@@ -1,0 +1,29 @@
+
+.brand-section{
+    padding: 50px 0;
+}
+
+.brand-title h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 52%;
+}
+.brandSideCard{
+    border: none !important;
+    border-bottom: 1px solid #f8f8f8 !important;
+}
+.brandSideCard .card-header{
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #f8f8f8;
+    font-size: 25px;
+}
+.brand-image img{
+    border-radius: 20px;
+}
+.brand-title{
+display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}

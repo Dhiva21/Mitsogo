@@ -33,7 +33,7 @@
 }
 .bannerBelowContent p{
     color: #fff;
-    font-size: 25px;
+    font-size: 14px;
     margin-top: 20px;
 }
 .rightBorder{
@@ -43,4 +43,13 @@ height: 100%;
 .bannerBelowBg{
     background-color: #1a1c2b;
     padding: 40px 0;
+}
+.bannerBelowContent img{
+    width: 45%;
+}
+.bannerBelowContent{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+    padding: 0px 45px;
 }
