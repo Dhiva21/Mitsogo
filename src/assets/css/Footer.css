@@ -51,4 +51,29 @@
   .request:hover .arrow {
     transform: translateX(5px); 
   }
-  
+  .termBg{
+    background-color: #f2f2f2;
+  }
+  .terms{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+  }
+  .termsList{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .termsList li{
+    margin-right: 10px;
+    color: #556575;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .terms p{
+    margin-right: 10px;
+    color: #556575;
+    font-size: 14px;
+    font-weight: bold;
+  }

@@ -54,7 +54,7 @@ const Brand = () => {
             <div className="row">
               <div className="col-md-5">
                 <div className="brand-image">
-                  <img src={sections[selectedIndex].image} alt="Kiosk" className="img-fluid" />
+                   <img loading='lazy' src={sections[selectedIndex].image} alt={sections[selectedIndex].title} className="img-fluid" />
                   
                   {/* Tooltip */}
                   <div className="tooltip-box">

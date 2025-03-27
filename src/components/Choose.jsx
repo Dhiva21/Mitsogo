@@ -83,12 +83,12 @@ const Choose = () => {
                       <SwiperSlide key={index}>
                         <div className="chooseImageContainer">
                                 <div className="row">
-                          <div className="col-md-3 offset-xl-2 pe-0">
+                          <div className="col-xl-3 col-lg-6 col-md-3 offset-xl-2 pe-0">
                             <div className="chooseImage">
-                              <img src={testimonial.img} alt="Testimonial" />
+                               <img loading='lazy' src={testimonial.img} alt="Testimonial" />
                             </div>
                           </div>
-                          <div className="col-md-7 sideContentBg">
+                          <div className="col-xl-7 col-lg-6 col-md-9  sideContentBg">
                             <div className="chooseImageContent">
                               <div className="chooseImageContentInner">
                                 <h4>"{testimonial.quote}"</h4>
@@ -134,7 +134,7 @@ const Choose = () => {
                   >
                     {logos.map((logo, index) => (
                       <SwiperSlide key={index}>
-                        <img src={logo} alt="brand-logo" style={{ maxWidth: "100%" }} />
+                         <img loading='lazy' src={logo} alt="brand-logo" style={{ maxWidth: "100%" }} />
                       </SwiperSlide>
                     ))}
                   </Swiper>

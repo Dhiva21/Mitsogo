@@ -18,8 +18,10 @@ const Banner = () => {
         const handleScroll = () => {
             if (window.scrollY > 50) {
                 setScroll(true);
+          
             } else {
                 setScroll(false);
+        
             }
         };
         window.addEventListener("scroll", handleScroll);
@@ -39,55 +41,63 @@ const Banner = () => {
             <div className="container-fluid">
                 <div className="row mb-5">
                     <div className="col-md-12">
-                    <Navbar
-      expand="lg"
-      className={`fixed-top ${scroll || hover ? "scrolled-navbar" : ""}`}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
-      <Container className="d-flex justify-content-between">
-        {/* Logo */}
-        <Navbar.Brand href="#">
-          <img
-            src={scroll || hover ? dark_logo : white_logo}
-            alt="Logo"
-            className={`logoWidth ${scroll || hover ? "scrolled-logo" : ""}`}
-          />
-        </Navbar.Brand>
+                                              <Navbar
+                            expand="lg"
+                            className={`fixed-top ${scroll || hover ? "scrolled-navbar" : ""}`}
+                            onMouseEnter={() => setHover(true)}
+                            onMouseLeave={() => setHover(false)}
+                          >
+                            <Container className="d-flex justify-content-between">
+                              {/* Logo */}
+                              <Navbar.Brand href="#">
+                                <img
+                                  loading="lazy"
+                                  src={scroll || hover ? dark_logo : white_logo}
+                                  alt="Logo"
+                                  className={`logoWidth ${scroll || hover ? "scrolled-logo" : ""}`}
+                                />
+                              </Navbar.Brand>
 
-        {/* Offcanvas Navbar */}
-        <Navbar.Toggle
-          aria-controls="offcanvasNavbar"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <i className={`fa ${isOpen ? "fa-times" : "fa-bars"}`}  style={{ color: scroll ? "black" : "white", fontSize: "24px" }} />
-        </Navbar.Toggle>
+                              
+                              <Navbar.Toggle
+                                aria-controls="offcanvasNavbar"
+                                onClick={() => setIsOpen(!isOpen)}
+                              >
+                                <i
+                                  className={`fa ${isOpen ? "fa-times" : "fa-bars"}`}
+                                  style={{
+                                    color: isOpen || scroll ? "black" : "white", 
+                                    fontSize: "24px",
+                                  }}
+                                />
+                              </Navbar.Toggle>
 
-        <Navbar.Offcanvas
-          id="offcanvasNavbar"
-          placement="end"
-          show={isOpen}
-          onHide={() => setIsOpen(false)}
-        >
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title></Offcanvas.Title>
-          </Offcanvas.Header>
-         
-          <Offcanvas.Body>
-            <Nav className="ms-auto">
-              <div className="trialBtn">
-                <button>14 Days Free Trial</button>
-              </div>
-            </Nav>
-          </Offcanvas.Body>
-        </Navbar.Offcanvas>
-      </Container>
-    </Navbar>
+                              <Navbar.Offcanvas
+                                id="offcanvasNavbar"
+                                placement="end"
+                                show={isOpen}
+                                onHide={() => setIsOpen(false)}
+                              >
+                                <Offcanvas.Header closeButton>
+                                  <Offcanvas.Title></Offcanvas.Title>
+                                </Offcanvas.Header>
+
+                                <Offcanvas.Body>
+                                  <Nav className="ms-auto">
+                                    <div className="trialBtn">
+                                      <button>14 Days Free Trial</button>
+                                    </div>
+                                  </Nav>
+                                </Offcanvas.Body>
+                              </Navbar.Offcanvas>
+                            </Container>
+                          </Navbar>
+
                      </div>
                 </div>
                 <div className="container pt_40">
-                    <div className="row align-items-center">
-                    <div className="col-md-5 order-md-1 order-2">
+                    <div className="row align-items-center justify-content-center">
+                    <div className="col-xl-5 col-lg-7 col-md-9 order-xl-1 order-2  mb-3">
                         <div className='bannerContent'>
                             <h3>
                                 Turn your devices into kiosks in a few minutes with Hexnode UEM
@@ -95,7 +105,7 @@ const Banner = () => {
                         </div>
                         <div>
                             <div className="row">
-                                <div className="col-md-7 col-12 pe-xl-0 mb-3">
+                                <div className="col-xl-7 col-lg-6 col-md-6 pe-xl-0 mb-3">
                                        <div className='trialForm'>
                                 <Form.Control
                                             required
@@ -105,7 +115,7 @@ const Banner = () => {
                                         />
                             </div>
                                 </div>
-                                <div className="col-md-5 col-12 ps-xl-1">
+                                <div className="col-xl-5 col-lg-6 col-md-6 col-12 ps-xl-1">
                                       <div className='trialBtn trialBtn2'>
                                         <button>
                                         GET STARTED NOW!                                       
@@ -117,9 +127,9 @@ const Banner = () => {
                          
                         </div>
                     </div>
-                    <div className="col-md-6 order-md-2 order-1 offset-xl-1">
+                    <div className="col-xl-6 col-lg-8 order-xl-2 order-lg-1 offset-xl-1">
                         <div>
-                            <img src={bannerImg} alt="Banner" className='img-fluid' />
+                             <img loading='lazy' src={bannerImg}  alt="Banner" className='img-fluid' />
                         </div>
                        
                     </div>
@@ -135,10 +145,14 @@ const Banner = () => {
                         <div className="col-md-4 ">
                             <div className='rightContent'>
                                <div className='bannerBelowContent'>
-                                <img src={idc} alt="IDC" className='img-fluid' />
+                                <div className='mobileResCenter'>
+                                 <img loading='lazy' src={idc} alt="IDC" className='img-fluid' />
                                 <p>
                                     Hexnode is listed as a leader and a major player in IDC MarketScape UEM Vendors Assessment Reports 2024.
                                 </p>
+                                </div>
+                               
+                               
                             </div>
                             <div className='sideBorder'>
                             </div>
@@ -148,10 +162,12 @@ const Banner = () => {
                          <div className="col-md-4 ">
                             <div className='rightContent'>
                                <div className='bannerBelowContent'>
-                                <img src={gartner} alt="Gartner" className='img-fluid' />
+                               <div className='mobileResCenter'>
+                                 <img loading='lazy' src={gartner} alt="Gartner" className='img-fluid' />
                                 <p>
                                    Hexnode was recognized in the 2025 Gartner® Market Guide for Unified Endpoint Management Tools.
                                 </p>
+                                </div>
                             </div>
                             <div className='sideBorder'>
                             </div>
@@ -161,10 +177,12 @@ const Banner = () => {
                          <div className="col-md-4">
                             <div className='rightContent'>
                                <div className='bannerBelowContent'>
-                                <img src={forrester} alt="Forrester" className='img-fluid' />
+                               <div className='mobileResCenter'>
+                                 <img loading='lazy' src={forrester} alt="Forrester" className='img-fluid' />
                                 <p>
                                    Forrester includes Hexnode as a Notable vendor in The Unified Endpoint Management Landscape, Q3 2023.
                                 </p>
+                            </div>
                             </div>
                             </div>
                            

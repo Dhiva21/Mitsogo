@@ -27,9 +27,9 @@ const Platform = () => {
 
               <div className="row justify-content-center">
                 {platforms.map((platform, index) => (
-                  <div key={index} className="col-md-2 col-6">
+                  <div key={index} className="col-xl-2 col-md-4 col-6">
                     <div className="platform-card  mb-3">
-                      <img src={platform.logo} alt={platform.name} />
+                       <img loading='lazy' src={platform.logo} alt={platform.name} />
                     </div>
                   </div>
                 ))}

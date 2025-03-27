@@ -2,8 +2,10 @@
     padding: 80px 0px;
 }
   .platform-section h2{
+    font-size: 45px;
     text-align: center;
     margin-bottom: 30px;
+    font-weight: bold;
   }
   .platform-cards {
     display: flex;

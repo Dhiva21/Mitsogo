@@ -105,7 +105,7 @@ const TabSection = () => {
                         transition={{ duration: 0.5, ease: "easeOut" }}
                       >  
   <div className="tabContentImg">
-                            <img src={tab.image} alt={tab.title} className="img-fluid" />
+                             <img loading='lazy' src={tab.image} alt={tab.title} className="img-fluid" />
                             </div>
                       <div className="tabContentTitle">
                                                   <h2>{tab.heading}</h2>
@@ -135,20 +135,20 @@ const TabSection = () => {
                           transition={{ duration: 0.5, ease: "easeOut" }}
                         >
                           <Row className="align-items-center">
-                            <Col md={7}>
+                            <Col xl={7} md={12} className="order-xl-1 order-md-2" >
                             <div className="tabContentTitle">
                             <h2>{tab.heading}</h2>
                             </div>
                               
-                              <ul className="tabContentList">
+                              <ul className="tabContentList ">
                                 {tab.features.map((feature, index) => (
                                   <li key={index}>{feature}</li>
                                 ))}
                               </ul>
                             </Col>
-                            <Col md={5}>
+                            <Col xl={5} md={12} className=" order-xl-2 order-md-1">
                             <div className="tabContentImg">
-                            <img src={tab.image} alt={tab.title} className="img-fluid" />
+                             <img loading='lazy' src={tab.image} alt={tab.title} className="img-fluid" />
                             </div>
                               
                             </Col>
