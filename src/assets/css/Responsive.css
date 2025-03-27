@@ -6,7 +6,21 @@
 @media only screen and (min-width: 1600px) and (max-width: 1919px) {}
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {}
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+.trialBtn2 button {
+    padding: 12px 2px;
+}
+    .tabSection .nav-link {
+    color: #020a1980;
+    font-size: 21px;
+    border: .5px solid #e5e7eb;
+    border-radius: 3px;
+    padding: 17px 24px;
+    width: 223px;
+}
 
+    
+}
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {}
 
 @media only screen and (device-width: 1024px) {
