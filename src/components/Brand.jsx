@@ -52,7 +52,7 @@ const Brand = () => {
               <h3>What additional possibilities does the Kiosk mode offer?</h3>
             </div>
             <div className="row">
-              <div className="col-md-5">
+              <div className="col-xl-5">
                 <div className="brand-image">
                    <img loading='lazy' src={sections[selectedIndex].image} alt={sections[selectedIndex].title} className="img-fluid" />
                   
@@ -64,7 +64,7 @@ const Brand = () => {
                 </div>
               </div>
 
-              <div className="col-md-7">
+              <div className="col-xl-7">
                 <div className="content-container">
                   {sections.map((section, index) => (
                     <Card
