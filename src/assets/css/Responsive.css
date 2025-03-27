@@ -10,32 +10,17 @@
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {}
 
 @media only screen and (device-width: 1024px) {
-    .total {
-        margin-bottom: 14px;
+    .tabSection .nav-link {
+        color: #020a1980;
+        font-size: 16px;
+        border: 0.5px solid #e5e7eb;
+        border-radius: 3px;
+        padding: 17px 4px;
+        width: 187px;
     }
-
-    .borderBottomCanidate {
-        border: 1px solid #ddd;
-        height: 229px;
-        padding: 8px 23px;
-    }
-
-    .candidateImg img {
-        width: 70%;
-    }
-
-    .customStateImg2 {
-        width: 52%;
-        margin: 10px 0px 0px;
-    }
-
-    .customStateImg1 {
-        width: 40%;
-        margin: 0px 0px 10px;
-    }
-
-    .assembly {
-        height: 270px;
+    .footerBtn button {
+        padding: 13px 9px;
+        font-size: 16px;
     }
 }
 
@@ -60,21 +45,58 @@
 @media only screen and (min-width: 640px) and (max-width: 768px) {}
 
 @media only screen and (max-width: 768px) {
-    .total {
-        margin-bottom: 12px;
+    .tabSection .nav-link {
+        font-size: 14px;
+        padding: 17px 9px;
+        width: 139px;
     }
-
-    .borderBottomCanidate {
-        height: 228px;
+    .footerBtn button {
+        padding: 13px 22px;
+        font-size: 16px;
     }
-
-    .customStateImg1 {
-        width: 62%;
-        margin: 0px 0px 2px;
+    .rightContent {
+        padding: 20px 1px 0px 0px;
     }
-
-    .assembly {
-        height: 228px;
+    .brand-title h3 {
+        width: 100%;
+    }
+    .chooseImage {
+        display: flex ;
+        justify-content: end;
+    }
+    .choose-title h3 {
+        font-size: 33px;
+    }
+    .chooseImageContainer {
+        margin: 0 9% 10% 40%;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        background: white;
+        padding: 18px 25px;
+        border-radius: 8px;
+    }
+    
+    .swiper-button-prev{
+        position: absolute;
+    left: 30%;
+    top: 95%;
+    }
+            .swiper-button-next {
+                position: absolute;
+                left: 50%;
+                top: 95%;
+            }
+    .chooseImageContent h4 {
+        font-size: 19px;
+        text-align: center;
+    }
+    .chooseImageContentInner {
+        text-align: left;
+        padding: 20px 29px;
+    }
+    .footerSign {
+        width: 85%;
+        margin: 10px auto;
     }
 }
 
@@ -105,29 +127,101 @@
 @media only screen and (min-width: 480px) {}
 
 @media only screen and (max-width: 480px) {
-    .mb_400 {
+    .bannerContent h3{
+        text-align: center;
+        font-size: 33px;
+    }
+    .trialBtn2 button {
+       width: 100%;
+       margin-bottom: 40px;
+    }
+    .rightContent {
+        display: block;
+        height: auto;
+        padding: 20px 1px 0px 9px;
+    }
+    .sideBorder {
+        border-right: 0px solid hsla(0, 0%, 100%, .2);
+        border-bottom: 1px solid hsla(0, 0%, 100%, .2);
+        height: 100%;
+        width: 35%;
+        margin: 5px auto;
+    }
+    .mobileResCenter{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .bannerBelowContent img {
+        width: 25%;
+    }
+    .bannerBelowContent p {
+        font-size: 14px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .tooltip-box {
+        right: 0%;
+    }
+    .tabSectionTitle h2 {
+        font-size: 25px;
+    }
+    .tabContentTitle h2 {
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+  
+    .brandSideCard .card-header {
+        font-size: 23px;
+    }
+    .choose-title h3 {
+        font-size: 33px;
+    }
+    .chooseImageContainer {
+        margin: 0 9% 10% 7%;
+        padding: 40px 0px;
+    }
+    
+    .swiper-button-prev{
+        position: absolute;
+    left: 30%;
+    top: 95%;
+    }
+            .swiper-button-next {
+                position: absolute;
+                left: 50%;
+                top: 95%;
+            }
+    .sideContentBg {
+        background-color: white;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .chooseImage img {
+        border-radius: 20px 20px 0px 0px ;
+    }
+    .chooseImageContent h4 {
+        font-size: 19px;
+        text-align: center;
+    }
+    .chooseImageContentInner {
+        text-align: left;
+        padding: 20px 29px;
+    }
+    .footerBtn button {
+        width: 100%;
         margin-bottom: 20px;
     }
-
-    .borderBottomCanidate {
-        height: 283px;
+    .footer-title h3{
+        font-size: 30px;
     }
-
-    .candidate-slide1 {
-        position: absolute;
-        top: 148px;
-        left: 0;
-        opacity: 0;
-        transition: opacity 1s ease;
+    .footerSign {
+        width: 100%;
+        margin: 10px auto;
     }
-
-    .customStateImg1 {
-        width: 62%;
-        margin: 0px 0px -3px;
-    }
-
-    .total {
-        margin: 10px 0px;
+    .terms{
+        display: flex ;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
     }
 }
 
@@ -138,74 +232,7 @@
 @media only screen and (min-width: 320px) and (max-width: 479px) {}
 
 @media only screen and (max-width: 414px) {
-.bannerContent h3{
-    text-align: center;
-    font-size: 33px;
-}
-.trialBtn2 button {
-   width: 100%;
-   margin-bottom: 40px;
-}
-.tooltip-box {
-    right: 0%;
-}
-.tabSectionTitle h2 {
-    font-size: 25px;
-}
-.tabContentTitle h2 {
-    font-size: 20px;
-    padding: 10px 0px;
-}
-.brand-title h3 {
-    width: 100%;
-}
-.brandSideCard .card-header {
-    font-size: 23px;
-}
-.choose-title h3 {
-    font-size: 33px;
-}
-.chooseImageContainer {
-    margin: 0 9% 10% 7%;
-    padding: 40px 0px;
-}
 
-.swiper-button-prev{
-    position: absolute;
-left: 30%;
-top: 95%;
-}
-        .swiper-button-next {
-            position: absolute;
-            left: 50%;
-            top: 95%;
-        }
-.sideContentBg {
-    background-color: white;
-    border-radius: 0px 0px 20px 20px;
-}
-.chooseImage img {
-    border-radius: 20px 20px 0px 0px ;
-}
-.chooseImageContent h4 {
-    font-size: 19px;
-    text-align: center;
-}
-.chooseImageContentInner {
-    text-align: left;
-    padding: 20px 29px;
-}
-.footerBtn button {
-    width: 100%;
-    margin-bottom: 20px;
-}
-.footer-title h3{
-    font-size: 30px;
-}
-.footerSign {
-    width: 100%;
-    margin: 10px auto;
-}
 }
 
 @media only screen and (min-width: 411px) and (max-width: 414px) {}
