@@ -83,7 +83,7 @@ const Choose = () => {
                       <SwiperSlide key={index}>
                         <div className="chooseImageContainer">
                                 <div className="row">
-                          <div className="col-xl-3 col-lg-6 col-md-3 offset-xl-2 pe-0">
+                          <div className="col-xl-3 col-lg-6 col-md-3 offset-xl-2 pe-xl-0 px-0">
                             <div className="chooseImage">
                                <img loading='lazy' src={testimonial.img} alt="Testimonial" />
                             </div>

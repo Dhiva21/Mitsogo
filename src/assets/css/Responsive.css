@@ -223,6 +223,13 @@
             flex-direction: column;
             align-items: center;
     }
+    .chooseImage {
+        display: flex;
+        justify-content: center;
+    }
+    .chooseImage img{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 471px) and (max-width: 767px) {}
